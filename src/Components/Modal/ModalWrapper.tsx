@@ -1,5 +1,4 @@
 import { Modal } from "antd"
-import React from "react"
 import { ModalProps } from "@/Types/ModalTypes"
 
 const ModalWrapper = ({ setModalOpen, modalOpen, children }: ModalProps) => {
@@ -12,7 +11,7 @@ const ModalWrapper = ({ setModalOpen, modalOpen, children }: ModalProps) => {
       closeIcon={null}
       destroyOnClose={true}
     >
-      <div className={`flex justify-center modal-content rounded-lg overflow-auto bg-transparent`}>
+      <div className={`flex justify-center rounded-lg overflow-auto bg-transparent`}>
         {children}
       </div>
     </Modal >

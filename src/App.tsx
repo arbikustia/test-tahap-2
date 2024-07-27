@@ -1,12 +1,10 @@
-import NavBar from '@/Components/Navbar';
 import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className="w-full h-screen overflow-hidden">
-        <NavBar />
-        <div className={`flex flex-col bg-blue-100 bg-opacity-20 h-full gap-8 p-3 pt-32`}>
+      <div className="w-full ">
+        <div className={`flex flex-col bg-opacity-20 gap-8`}>
           <Outlet />
         </div>
       </div>

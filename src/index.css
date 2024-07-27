@@ -1,34 +1,16 @@
+/* src/styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'DM';
-  src: url('assets/font/DMSans-VariableFont_opsz,wght.ttf');
+.border-indicator {
+  @apply absolute bottom-0 h-0.5 bg-blue-600 transition-all duration-300;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
-@layer base {
-  * {
-    @apply box-border font-DM  text-gray-800  dark:text-white-400 transition-colors duration-300;
-  }
-
-  body {
-    @apply bg-white-100 dark:bg-grey-900;
-  }
-
-  ::-webkit-scrollbar {
-    @apply w-4 h-4 scroll-smooth;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-grey-50 dark:bg-grey-500 rounded-full;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-white-700 dark:bg-grey-300 rounded-full;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-grey-500;
-  }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }

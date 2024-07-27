@@ -23,6 +23,11 @@ export interface PaginationRequest {
   plant?: string
   part?: string
   model?:string
+  Type?: string
+  Start?:string
+  End?:string
+  Lokasi:string
+  Status?:string
 }
 
 export interface SearchProps {

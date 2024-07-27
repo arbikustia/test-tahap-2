@@ -1,12 +1,12 @@
 // function for filtering data table base on local pagination, required when using local pagination
-export const filterBody = (body: any[], page: number, limit: number) => {
-    return body.filter((item, index) => {
+export const filterBody = (body: unknown[], page: number, limit: number) => {
+    return body.filter((_, index) => {
       return index >= (page - 1) * limit && index < page * limit
     })
   }
   
   // function for creating list of page number, required when using local pagination
-  export const pageListCreator = (data: any[], limit: number) => {
+  export const pageListCreator = (data: unknown[], limit: number) => {
     const list = []
     let i = 1
   
@@ -26,7 +26,7 @@ export const filterBody = (body: any[], page: number, limit: number) => {
   }
   
   // function for creating list of page number, required when using local pagination
-  export const displayPaginationCreator = (pageList: any[], page: number) => {
+  export const displayPaginationCreator = (pageList: unknown[], page: number) => {
     const totalPage: number = pageList.length
     const currentPage: number = page
   

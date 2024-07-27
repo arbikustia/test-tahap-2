@@ -1,4 +1,3 @@
-import React from 'react';
 import Exit from '@/Assets/icons/exit.svg';
 
 interface FormHeaderProps {

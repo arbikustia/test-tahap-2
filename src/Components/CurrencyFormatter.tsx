@@ -1,7 +1,6 @@
-import React from 'react';
 
 type formatterProps = {
-    amount: number
+    amount: number | undefined
     type: string
 }
 
